@@ -6,14 +6,14 @@ import { Header } from "../ui/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ParallaxProvider>
-      <SmoothScroll>
+    <SmoothScroll>
+      <ParallaxProvider>
         <Header />
         <main>
           <Component {...pageProps} />
         </main>
-      </SmoothScroll>
-    </ParallaxProvider>
+      </ParallaxProvider>
+    </SmoothScroll>
   );
 }
 
